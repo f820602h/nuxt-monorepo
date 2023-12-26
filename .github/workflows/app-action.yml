@@ -1,0 +1,22 @@
+name: Nuxt monorepo app workspace
+
+on:
+  push:
+    paths:
+      - "package/ui/**"
+      - "package/app/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm app build
+      - name: Test
+        run: echo "app"
