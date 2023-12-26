@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "dotenv -- pnpm -r dev",
+    "build": "dotenv -- pnpm -r build",
+    "app": "pnpm dotenv -- pnpm --filter @nuxt-monorepo/app",
+    "job": "pnpm dotenv -- pnpm --filter @nuxt-monorepo/job"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv-cli": "^7.3.0"
+  }
 }

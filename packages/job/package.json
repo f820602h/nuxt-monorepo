@@ -1,0 +1,19 @@
+{
+  "name": "@nuxt-monorepo/job",
+  "private": true,
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt-monorepo/ui": "workspace:^",
+    "nuxt": "^3.9.0",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  }
+}
