@@ -11,9 +11,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt-monorepo/ui": "workspace:^",
-    "nuxt": "^3.9.0",
-    "vue": "^3.3.10",
-    "vue-router": "^4.2.5"
+    "@nuxt-monorepo/ui": "workspace:^"
   }
 }

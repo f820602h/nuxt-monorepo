@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "packages/ui/**"
+      - "packages/job/**"
       - "packages/app/**"
 
 jobs:
