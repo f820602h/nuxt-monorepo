@@ -2,6 +2,6 @@
 
 <template>
   <div>
-    <UiTheMessage text="this is a job message" />
+    <UiTheMessage text="this is a job message~~" />
   </div>
 </template>

@@ -3,8 +3,8 @@ name: Nuxt monorepo app workspace
 on:
   push:
     paths:
-      - "package/ui/**"
-      - "package/app/**"
+      - "packages/ui/**"
+      - "packages/app/**"
 
 jobs:
   build:
