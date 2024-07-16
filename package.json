@@ -1,21 +1,23 @@
 {
   "name": "nuxt-monorepo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "dotenv -- pnpm -r dev",
     "build": "dotenv -- pnpm -r build",
-    "app": "pnpm dotenv -- pnpm --filter @nuxt-monorepo/app",
-    "job": "pnpm dotenv -- pnpm --filter @nuxt-monorepo/job"
+    "ui": "pnpm --filter @nuxt-monorepo/ui",
+    "job": "pnpm --filter @nuxt-monorepo/job",
+    "app": "pnpm --filter @nuxt-monorepo/app"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "dotenv-cli": "^7.3.0",
     "nuxt": "^3.9.0",
     "vue": "^3.3.13",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "@nuxt/eslint-config": "^0.3.13",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
   }
 }

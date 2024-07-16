@@ -1,6 +1,6 @@
 <template>
   <div>
-    // Job workspace test app
+    In Job Workspace
     <UiTheMessage />
     <JobTheMessage />
   </div>
